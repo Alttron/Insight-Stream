@@ -1,0 +1,9 @@
+User Google Search
+  Content Script extracts query
+  Sends query to Backend API
+  Backend:
+     - Extracts claim
+     - Queries multiple sources
+     - Scores credibility
+     - Generates summary
+  Result shown in extension popup
