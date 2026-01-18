@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Insight Stream",
+  "version": "1.0",
+  "description": "Fact-checks search queries using multiple trusted sources.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["content.js"]
+    }
+  ]
+}
